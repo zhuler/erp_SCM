@@ -1,0 +1,4 @@
+database name: liveedit
+
+username: admin
+password: admin
