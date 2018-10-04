@@ -1,0 +1,209 @@
+@import url('fonts-face.css');
+@import url('transition.css');
+
+body,td,th {
+	font-family:Verdana, Geneva, sans-serif;
+	font-size: 12px;
+	color:#000;
+	margin:0px;
+}
+body {
+	margin: 0px;
+	
+	background-color: #EEE;
+    background-image: -webkit-linear-gradient( 45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD), 
+                      -webkit-linear-gradient(-45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD);
+    background-image:    -moz-linear-gradient( 45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD), 
+                         -moz-linear-gradient(-45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD);
+    background-image:      -o-linear-gradient( 45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD), 
+                           -o-linear-gradient(-45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD);
+    background-image:         linear-gradient( 45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD), 
+                              linear-gradient(-45deg, #DDD 25%,transparent 25%, transparent 75%, #DDD 75%, #DDD);
+    background-size:60px 60px;
+
+}
+a:link {
+	text-decoration: underline;
+	color:#390;
+}
+a:visited {
+	text-decoration: underline;
+	color:#390;
+}
+
+a:focus {
+	text-decoration: none;
+	color:#390 !important;
+}
+
+a:active {
+	text-decoration: underline;
+	color:#390;
+}
+h1{
+	font-size:26px;
+}
+
+h1, h2, h3, h4, h5, h6, .headin1, .headin2, .headin3 {
+	font-family:'carat-regularregular', "Times New Roman", Times, serif;
+	color:#080;
+}
+ 
+input, select, button {
+	padding:4px;
+	color:#666;
+}
+
+div#outermost {
+	width:80%;
+	height:auto;
+	margin:0 auto;
+	min-width:920px;
+}
+
+div#in-outermost {
+	width:100%;
+	height:auto;
+	background-color:#FFF;
+	float:left;
+	min-width:920px;
+}
+
+div#wrapper {
+	margin:0 auto;
+	width:900px;
+	height:auto;
+}
+
+div#in-wrapper {
+	width:100%;
+	float:left;
+	height:auto;
+}
+
+
+div#banner {
+	height:auto;
+	width:inherit;
+	float:left;
+	margin-bottom:5px;
+}
+
+div#sitename {
+	float:left;
+	width:380px;
+	padding-right:10px;
+	height:50px;
+	font-family: 'lolita_mediummedium', "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:24px;
+	text-align:center;
+	vertical-align:baseline;
+	color:#080;
+}
+div#welcome{
+	width:300px;
+	height:40px;
+	float:right;
+	padding-right:60px;
+	font-family: 'lolita_mediummedium', "Trebuchet MS", Arial, Helvetica, sans-serif;
+	font-size:18px;
+	text-align:center;
+	vertical-align:baseline;
+	color:#0B0;
+	padding-top:20px;
+}
+
+div#aabbcc {
+	float:left;
+	width:610px;
+	height:inherit;
+}
+
+div#search-bar {
+	float:right;
+	width:500px;
+	height:55px;
+	padding-bottom:10px;
+	text-align:right;
+}
+
+div#body-container {
+	float:left;
+	width:inherit;
+	height:auto;
+	margin-top:5px;
+}
+
+div#slidesh {
+	width:860px;
+	height:273px;
+	padding:20px;
+	margin: 0 auto;
+	background:#fff url(../images/slideshow/slide-bg.jpg) no-repeat;
+}
+
+div#container {
+	float:left;
+	height:auto;
+	width:820px;
+	padding:0px 40px;
+	line-height:20px;
+}
+
+div#container a{
+	
+}
+.blog {
+	width:250px;
+	float:left;
+	margin:0 18px 0 0;
+}
+
+.middle {
+	margin:0 17px;
+}
+
+.third {
+	margin:0 0 0 18px;
+}
+
+div#footer {
+	background-color:#F3F3F3;
+	background-image:	-moz-linear-gradient(#E1E1E1, #E9E9E9, #FFF);
+	background-image:linear-gradient(#E1E1E1, #E9E9E9, #FFF);
+	background-image:	-webkit-linear-gradient(#E1E1E1, #E9E9E9, #FFF);
+	float:left;
+	width:820px;
+	padding:10px 40px;
+	height:40px;
+	color:#000;
+	margin-top:20px;
+	font-size:14px;
+	font-family:'blitz-lightregular', Verdana, Geneva, sans-serif;
+	text-align:center;
+}
+
+div#copyright {
+	margin:0 auto;
+}
+
+div#copyright a.top_level{
+	padding:5px 5px;
+	text-decoration:blink;
+	font-weight:bolder;
+	font-size:18px;
+	border:1px #999 solid;
+	background-color:#E9E9E9;
+	background-image:	-moz-linear-gradient(#FFF, #E9E9E9, #E1E1E1);
+	background-image:linear-gradient(#FFF, #E9E9E9, #E1E1E1);
+	background-image:	-webkit-linear-gradient(#FFF, #E9E9E9, #E1E1E1);
+	height:auto !important;
+	color:#F00;
+}
+
+div#copyright a:hover{
+	text-decoration:none !important;
+	background-color:#E9E9E9 !important;
+	background-image:none !important;
+}
+
