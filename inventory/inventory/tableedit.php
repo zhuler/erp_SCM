@@ -165,9 +165,9 @@ Click the table rows to enter the quantity sold<br><br>
 <?php
 $da=date("Y-m-d");
 
-$sql=mysql_query("select * from inventory");
+$sql=mysqli_query($bd, "select * from inventory");
 $i=1;
-while($row=mysql_fetch_array($sql))
+while($row=mysqli_fetch_array($sql))
 {
 $id=$row['id'];
 $date=$row['date'];
@@ -197,8 +197,8 @@ if($i%2)
 
 <span id="last_<?php echo $id; ?>" class="text">
 <?php
-$sqls=mysql_query("select * from sales where date='$da' and product_id='$id'");
-while($rows=mysql_fetch_array($sqls))
+$sqls=mysqli_query($bd, "select * from sales where date='$da' and product_id='$id'");
+while($rows=mysqli_fetch_array($sqls))
 {
 echo $rows['qty'];
 }
@@ -212,10 +212,10 @@ echo $rows['qty'];
 </td>
 <td>
 
-<span class="text"><?php echo $dailysales; ?>
+<span class="text"><?php echo $sales; ?>
 <?php
-$sqls=mysql_query("select * from sales where date='$da' and product_id='$id'");
-while($rows=mysql_fetch_array($sqls))
+$sqls=mysqli_query($bd, "select * from sales where date='$da' and product_id='$id'");
+while($rows=mysqli_fetch_array($sqls))
 {
 $rtyrty=$rows['qty'];
 $rrrrr=$rtyrty*$price;
@@ -250,8 +250,8 @@ function formatMoney($number, $fractional=false) {
     }
     return $number;
 }		
-$result1 = mysql_query("SELECT sum(sales) FROM sales where date='$da'");
-while($row = mysql_fetch_array($result1))
+$result1 = mysqli_query($bd, "SELECT sum(sales) FROM sales where date='$da'");
+while($row = mysqli_fetch_array($result1))
 {
     $rrr=$row['sum(sales)'];
 	echo formatMoney($rrr, true);
@@ -264,8 +264,8 @@ while($row = mysql_fetch_array($result1))
 	<ul>
 	<?php
 	$CRITICAL=10;
-	$sql2=mysql_query("select * from inventory where qtyleft<='$CRITICAL'");
-	while($row2=mysql_fetch_array($sql2))
+	$sql2=mysqli_query($bd, "select * from inventory where qtyleft<='$CRITICAL'");
+	while($row2=mysqli_fetch_array($sql2))
 	{
 	echo '<li>'.$row2['item'].'</li>';
 	}
@@ -282,8 +282,8 @@ while($row = mysql_fetch_array($result1))
 	  <?php
 	  $a=$_POST['from'];
 	  $b=$_POST['to'];
-		$result1 = mysql_query("SELECT sum(sales) FROM sales where date BETWEEN '$a' AND '$b'");
-		while($row = mysql_fetch_array($result1))
+		$result1 = mysqli_query($bd, "SELECT sum(sales) FROM sales where date BETWEEN '$a' AND '$b'");
+		while($row = mysqli_fetch_array($result1))
 		{
 			$rrr=$row['sum(sales)'];
 			echo formatMoney($rrr, true);
@@ -295,10 +295,10 @@ while($row = mysql_fetch_array($result1))
 <form action="updateproduct.php" method="post">
 	<div style="margin-left: 48px;">
 	Product name:<?php
-	$name= mysql_query("select * from inventory");
+	$name= mysqli_query($bd, "select * from inventory");
 	
 	echo '<select name="ITEM" id="user" class="textfield1">';
-	 while($res= mysql_fetch_assoc($name))
+	 while($res= mysqli_fetch_assoc($name))
 	{
 	echo '<option value="'.$res['id'].'">';
 	echo $res['item'];
@@ -332,10 +332,10 @@ while($row = mysql_fetch_array($result1))
 <form action="updateprice.php" method="post">
 	<div style="margin-left: 48px;">
 	Product name:<?php
-	$name= mysql_query("select * from inventory");
+	$name= mysqli_query($bd, "select * from inventory");
 	
 	echo '<select name="ITEM" id="user" class="textfield1">';
-	 while($res= mysql_fetch_assoc($name))
+	 while($res= mysqli_fetch_assoc($name))
 	{
 	echo '<option value="'.$res['id'].'">';
 	echo $res['item'];
