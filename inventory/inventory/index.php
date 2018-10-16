@@ -30,6 +30,47 @@
           <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 
         <![endif]-->
+        <style>
+        button{
+	
+		/* button */
+	
+		opacity:0.9;
+		position:absolute;
+		top:342px;
+		left:25px;
+		width: 239px;
+		height:36px;
+		cursor:pointer;
+		border-radius:6px;
+		box-shadow:0 1px 1px #888;
+		border:none;
+		color:#fff;
+		font:14px/36px 'Segoe UI Light','Segoe UI',Arial,sans-serif;
+	
+		/* CSS3 Gradients */
+	
+		background-image: linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
+		background-image: -o-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
+		background-image: -moz-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
+		background-image: -webkit-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
+		background-image: -ms-linear-gradient(bottom, rgb(80,102,127) 50%, rgb(87,109,136) 50%, rgb(106,129,155) 100%);
+	
+		background-image: -webkit-gradient(
+			linear,
+			left bottom,
+			left top,
+			color-stop(0.5, rgb(80,102,127)),
+			color-stop(0.5, rgb(87,109,136)),
+			color-stop(1, rgb(106,129,155))
+		);
+		}
+
+		#formContainer{
+			height:400px;
+		}	
+        </style>
+
 
     </head>
 
@@ -46,13 +87,18 @@ echo '<li>',$msg,'</li>';
 echo '</ul>';
 unset($_SESSION['ERRMSG_ARR']);
 }
-$remark=$_GET['id'];
-if($remark=='success')
-{
-echo '<ul>';
-echo '<li>'." Registration Success You can now login ".'</li>';
-echo '</ul>';
-}
+
+if(isset($_GET['id']))
+	{
+		$remark=$_GET['id'];
+		if($remark=='success')
+		{
+		echo '<ul>';
+		echo '<li>'." Registration Success You can now login ".'</li>';
+		echo '</ul>';
+		}
+	}
+
 ?>
 </div>
 
@@ -68,6 +114,8 @@ echo '</ul>';
 				<input type="password" name="password" id="loginPass" placeholder="Password" />
 
 				<input type="submit" name="submit" value="Login" />
+
+				<button onclick="location.href='../../index.php'" type="button">Back to Portal</button>
 
 			</form>
 
