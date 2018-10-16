@@ -155,7 +155,7 @@ popupWindow =window.open('printform.php',"_blank","directories=no, status=no, me
 Click the table rows to enter the quantity sold<br><br>
 <table width="100%">
 <tr class="head">
-<th>Date</th>
+<th>Date last updated</th>
 <th>Item</th>
 <th>Quantity Left</th>
 <th>Qty Sold </th>
