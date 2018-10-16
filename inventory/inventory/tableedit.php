@@ -276,18 +276,26 @@ while($row = mysqli_fetch_array($result1))
 	<form action="tableedit.php#sales" method="post">
 	From: <input name="from" type="text" class="tcal"/>
       To: <input name="to" type="text" class="tcal"/>
-	  <input name="" type="submit" value="Seach" />
+	  <input name="" type="submit" value="Search" />
 	  </form><br />
 	 Total Sales:  
 	  <?php
-	  $a=$_POST['from'];
-	  $b=$_POST['to'];
-		$result1 = mysqli_query($bd, "SELECT sum(sales) FROM sales where date BETWEEN '$a' AND '$b'");
+	  $searched=0;
+	  if(isset($_POST['submit'])) {
+	  	$searched=1;
+	  }
+	  if($searched==1){
+	  	$a=$_POST['from'];
+	  	$b=$_POST['to'];
+	  	$result1 = mysqli_query($bd, "SELECT sum(sales) FROM sales where date BETWEEN '$a' AND '$b'");
 		while($row = mysqli_fetch_array($result1))
 		{
 			$rrr=$row['sum(sales)'];
 			echo formatMoney($rrr, true);
-		 }
+		}
+	  }
+
+		
 		
 		?>
 </div>
