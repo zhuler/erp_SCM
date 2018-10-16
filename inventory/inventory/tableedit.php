@@ -143,10 +143,10 @@ popupWindow =window.open('printform.php',"_blank","directories=no, status=no, me
 <h1>Inventory System </h1>
 <ol id="toc">
     <li><a href="#inventory"><span>Inventory</span></a></li>
-    <li><a href="#sales"><span>Sales</span></a></li>
-    <li><a href="#alert"><span>To be order</span></a></li>
-	<li><a href="#addproitem"><span>Add Item</span></a></li>
-    <li><a href="#addpro"><span>Add Product</span></a></li>
+    <li><a href="#sales"><span>Sales Orders</span></a></li>
+    <li><a href="#alert"><span>Restock Orders</span></a></li>
+	<li><a href="#addproitem"><span>Restock Items</span></a></li>
+    <li><a href="#addpro"><span>Add New Product</span></a></li>
     <li><a href="#editprice"><span>Edit Price</span></a></li>
 	<li><a href="index.php"><span>Logout</span></a></li>
 </ol>
