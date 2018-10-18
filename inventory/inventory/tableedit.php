@@ -265,7 +265,7 @@ while($row = mysqli_fetch_array($result1))
 	<?php
 	$CRITICAL=10;
 	$sql2=mysqli_query($bd, "select * from inventory where qtyleft<='$CRITICAL'");
-	while($row2=mysqli_fetch_array($sql2))
+	while($row2=mysqli_fetch_array($sql2,MYSQLI_NUM))
 	{
 	echo '<li>'.$row2['item'].'</li>';
 	}
@@ -280,18 +280,31 @@ while($row = mysqli_fetch_array($result1))
 	  </form><br />
 	 Total Sales:  
 	  <?php
-	  $searched=0;
-	  if(isset($_POST['submit'])) {
-	  	$searched=1;
-	  }
-	  if($searched==1){
+
+	  	/*function formatMoney($number, $fractional=false) {
+    		if ($fractional) {
+     		   $number = sprintf('%.2f', $number);
+    		}
+    		while (true) {
+    	   		$replaced = preg_replace('/(-?\d+)(\d\d\d)/', '$1,$2', $number);
+    	    	if ($replaced != $number) {
+            		$number = $replaced;
+        		} else {
+            		break;
+        		}
+    		}
+   			return $number;
+		}*/
+
+	  if(isset($_POST['submit'])){
 	  	$a=$_POST['from'];
 	  	$b=$_POST['to'];
 	  	$result1 = mysqli_query($bd, "SELECT sum(sales) FROM sales where date BETWEEN '$a' AND '$b'");
-		while($row = mysqli_fetch_array($result1))
+		while($row = mysqli_fetch_array($result1,MYSQLI_NUM))
 		{
 			$rrr=$row['sum(sales)'];
-			echo formatMoney($rrr, true);
+			//echo formatMoney($rrr, true);
+			echo $rrr;
 		}
 	  }
 

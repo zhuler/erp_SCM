@@ -1,0 +1,49 @@
+==Test Case Index==
+
+==User Access==
+Login
+Logout
+Registration
+
+==Inventory tab==
+Display Table
+Category Sort
+Print Table
+Check New Item
+Check Changed Price
+Low Inventory Alert
+
+==Restock History==
+Display Table
+Display Table Display Dependent Values
+
+==Order History==
+Display Table
+Display Table Display Dependent Values
+Category (Product ID)
+
+==Restock Items==
+Restock Function
+Restock Function Display Dependent Values
+Restock Report
+
+==Pending Orders==
+Insufficient Stock Alert
+Pending Orders Delivery
+Pending Orders Delivery Display Dependent Values
+Finished Orders Report
+Pending Orders Computations
+
+==Return Orders==
+Return Order History
+Return Order History Display Dependent Values
+Return Order Report
+Return Order Alert
+
+==Add New Item==
+Add Item Function
+Category Drop Down Test
+
+==Change Item Price==
+Change Price Function Item Dropdown
+Change Price Function 
