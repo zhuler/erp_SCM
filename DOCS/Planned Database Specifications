@@ -1,0 +1,20 @@
+Planned Database Specifications
+
+Products
++Product ID
++Name
++Category ID*
++Model
++Type
++Warehouse ID* //Optional
++Description
++Price
++Picture
+
+Category
++Category ID
++Name
++Description
++Picture //Optional
+
+etc
