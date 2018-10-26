@@ -296,12 +296,6 @@ while($row = mysqli_fetch_array($result1))
    			return $number;
 		}*/
 
-		function erwong($bayotness) {
-			if $bayotness {
-				// insert bayot code
-			}
-		}
-
 	  if(isset($_POST['submit'])){
 	  	$a=$_POST['from'];
 	  	$b=$_POST['to'];
