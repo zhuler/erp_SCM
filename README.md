@@ -15,6 +15,8 @@ Test Scripts and Test Cases of all members are moved into DOCS/ folder.
     * Coder
 * **Bearis, Justine Ace**
     * Coder
+* **Briñas, Jaysel**
+    * Documentation
 * **Celo, Dyya**
     * Tester
 * **Eleponga, Fatima**

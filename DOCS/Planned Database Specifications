@@ -1,5 +1,7 @@
 Planned Database Specifications
 
+Tables from Sales and Marketing
+
 Products
 +Product ID
 +Name
@@ -17,4 +19,39 @@ Category
 +Description
 +Picture //Optional
 
-etc
+
+Tables inherently used by SCM
+
+SCM Users
++User ID
++Username
++Password
++Full Name
++Address
++Email Address
++Contact Number
+
+Inventory
++Product ID
++Stocks Left
++Stocks Sold
++Latest Restock Date
+
+Sales History
++Date Ordered
++Date Delivered
++Product ID
++Stocks
++
+
+Restock History
++Date Requested
++Date Approved
++Product ID
++Stocks
++
+
+
+Tables for Accounting
+
++
