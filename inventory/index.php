@@ -115,7 +115,7 @@ if(isset($_GET['id']))
 
 				<input type="submit" name="submit" value="Login" />
 
-				<button onclick="location.href='../../index.php'" type="button">Back To Portal</button>
+				<button onclick="location.href='../index.php'" type="button">Back To Portal</button>
 
 			</form>
 
