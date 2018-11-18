@@ -1,0 +1,16 @@
+@charset "utf-8";
+.receipt {
+	margin: 0px;
+	padding: 4px;
+	clear: none;
+	float: none;
+	width: 272px;
+	font-size:13px;
+}
+.receipt2 {
+	margin: 0px;
+	padding: 4px;
+	clear: none;
+	padding-left:400px;
+	width: 272px;
+}
