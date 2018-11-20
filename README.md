@@ -8,29 +8,27 @@ The index.php file could link to individual folders of the modules recently adde
 
 ## DOCS
 
-Test Scripts and Test Cases of all members are moved into DOCS/ folder.
+Test Scripts and Test Cases of all members are moved into TESTS/ folder.
 
 ## Members
 * **Arañez, Johnder**
-    * Coder
+    * Programmer
 * **Bearis, Justine Ace**
-    * Coder
-* **Briñas, Jaysel**
-    * Documentation
+    * Developer/Programmer
 * **Celo, Dyya**
     * Tester
 * **Eleponga, Fatima**
     * Documentation
 * **Guerta, N-Jay**
-    * Designer
+    * UI Designer
 * **Perio, Aaron John**
-    * Tester
+    * Head Tester
 * **Rol, Nicole**
     * Documentation
 * **Sanchez, Christian Joshua**
-    * Documentation
+    * Tester
 * **Unabia, Kimberly**          
     * Documentation
 * **Villanueva, Rechelle**      
-    * Analyst, Leader
+    * Database Architect, Leader
 
