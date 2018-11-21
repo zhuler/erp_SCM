@@ -62,7 +62,7 @@
 							</select>
                         </div>
 						<div style="height:10px;"></div>
-						<div class="form-group input-group">
+					<!--	<div class="form-group input-group">
                             <span class="input-group-addon" style="width:120px;">Supplier:</span>
                             <select style="width:400px;" class="form-control" name="supplier">
 								<option value="<?php echo $b['supplierid']?>"><?php echo $b['company_name']; ?></option>
@@ -75,7 +75,7 @@
 									}
 								?>
 							</select>
-                        </div>
+                        </div>-->
 						<div style="height:10px;"></div>
 						<div class="form-group input-group">
                             <span class="input-group-addon" style="width:120px;">Price:</span>
