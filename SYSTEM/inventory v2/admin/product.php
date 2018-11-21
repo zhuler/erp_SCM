@@ -21,7 +21,6 @@
                 <thead>
                     <tr>
                         <th>Product Name</th>
-						<th>Supplier</th>
                         <th>Price</th>
 						<th>Quantity</th>
 						<th>Photo</th>
@@ -36,7 +35,6 @@
 					?>
 						<tr>
 							<td><?php echo $pqrow['product_name']; ?></td>
-							<td><?php echo $pqrow['company_name']; ?></td>
 							<td><?php echo $pqrow['product_price']; ?></td>
 							<td><?php echo $pqrow['product_qty']; ?></td>
 							<td><img src="../<?php if(empty($pqrow['photo'])){echo "upload/noimage.jpg";}else{echo $pqrow['photo'];} ?>" height="30px" width="30px;"></td>
