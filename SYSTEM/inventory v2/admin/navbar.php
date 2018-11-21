@@ -26,7 +26,7 @@
                         <li>
                             <a href="#"><i class="fa fa-sitemap fa-fw"></i> Master Files<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
-                                <li>
+                              <!--  <li>
                                     <a href="#"><span class="glyphicon glyphicon-user"></span> Users <span class="fa arrow"></span></a>
 									<ul class="nav nav-third-level">
                                         <li>
@@ -36,7 +36,7 @@
                                             <a href="supplier.php"> <i class="fa fa-truck"></i> Supplier</a>
                                         </li>
                                     </ul>
-                                </li>
+                                </li>-->
                                 <li>
                                     <a href="product.php"> <i class="fa fa-product-hunt"></i> Products</a>
                                 </li>
