@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Supply Chain and Inventory System</title>
+    <title>POS and Inventory System</title>
 	
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link href="vendor/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
