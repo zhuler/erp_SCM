@@ -1,4 +1,4 @@
-database name: liveedit
+database name: inventorydb
 
 username: admin
 password: admin

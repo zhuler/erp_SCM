@@ -1,0 +1,25 @@
+Checklist and Comments
+
+EXISTING UI DESIGN
+LOGIN/LOGOUT			-	Looks okay. Thought the popup of "Logging out..." can be replaced by an inquiry as
+							"Are you sure to logout?" or "Confirm Logout" instead.
+=====ADMIN mode?=====
+HOME DASHBOARD			- 	"Home" ; To work on ; Changed image to decent resolution.
+INVENTORY				- 	"Master Files -> Products" ; Will add some features such as Print and sorting etc.
+	Edit Products 		-	Remove editing quantity, wait, is this connected to the inventory report somehow?
+							Needs changing the method of resupplying.
+REQUEST					- 	"Master Files -> Admin -> Request" ; IDEK what that is and its purpose. Seems vague.
+SUPPLIERS				- 	"Master Files -> Admin -> Supplier" ; Is this for auditing purposes? 
+							Do we need to add a supplier list before ordering? (To defer?)
+ORDER REPORTS			-	"Reports -> Order Report" ; Is this the checkout from the S&M department? 
+							Or is this the report AFTER processing said order. Needs order status column.
+INVENTORY REPORTS 		-	"Reports -> Inventory Report" ; Is this connected with the entries from 
+							"ORDER REPORTS"?
+
+TODO:
+PENDING ORDERS			-	Need to check how S&M handles checkout. 
+RESTOCKING?				-	Need to rework restocking instead of editing product quantity.
+DATABASE				-	Need to assess notes from Simone and Mavbbvbvbvbin.
+PRODUCT DELIVERY		-	Together with PENDING ORDERS. Need to assess checkout and post details for A&F.
+HR ATTENDANCE			-	Attendance form from HR team.
+ADDITIONALS				-	Included on the note received from Njay as per Sir Yno's request.
