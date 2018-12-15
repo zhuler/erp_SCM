@@ -18,14 +18,14 @@ PHP formatting, include login, redirect to main page, connections, etc.
 			TODO: Sort them out.</h2></p>
 
 			<p>Main Modules:<br>
-				<a href="inventory/">Supply Chain Management</a><br>
+				<a href="scm/">Supply Chain Management</a><br>
 			</p>
 			<p>
-				Extra Modules for SCM:<br>
+			<!--	Extra Modules for SCM:<br>
 				<a href="others/EREC/">EREC</a><br>
 				<a href="others/inventory_mgmt/">Inventory Management</a><br>
 				<a href="others/projectsale&purchase/">Project Sale and Purchase</a><br>
-				<a href="others/regis_inventory/">Regis Inventory</a>
+				<a href="others/regis_inventory/">Regis Inventory</a>-->
 			</p>
 		</div>
 	</body>
