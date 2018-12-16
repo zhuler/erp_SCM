@@ -18,8 +18,79 @@ INVENTORY REPORTS 		-	"Reports -> Inventory Report" ; Is this connected with the
 
 TODO:
 PENDING ORDERS			-	Need to check how S&M handles checkout. 
-RESTOCKING?				-	Need to rework restocking instead of editing product quantity.
+*RESTOCKING?				-	Need to rework restocking instead of editing product quantity.
 DATABASE				-	Need to assess notes from Simone and Mavbbvbvbvbin.
 PRODUCT DELIVERY		-	Together with PENDING ORDERS. Need to assess checkout and post details for A&F.
 HR ATTENDANCE			-	Attendance form from HR team.
 ADDITIONALS				-	Included on the note received from Njay as per Sir Yno's request.
+
+
+
+Detailing:
+Master Files -> Admin -> Request
+	===Add Request=== 
+	NOTE: REWORK 
+	LEGEND: (*) - Automatic, uneditable
+		Button existing
+		->Function: Show modal popup with Contents
+			Item Request: Drop down from Product list (Sales and Marketing)
+			*Supplier: Automatically shows upon changing Item Request
+			*Unit Price: Automatically shows upon changing Item Request
+			Quantity: Dozen(12)/Bundle(6)/Bulk(If bulk, show text box?)
+			*Total Price: Automatically computes Unit Price with the Quantity/Amount
+			Authentication: (Not displayed, used for categorizing user and password)
+				User: Text box for username
+				Password: Text box for password
+			Save Button
+			Cancel (Not needed if modal has close button)
+
+Master Files -> Admin -> Supplier
+	===Supplier===
+		NOTE: Fetches Supplier details from every item on product list (Sales and Marketing)
+
+Master Files -> Products 
+	This is the inventory table of the system
+	===Table===
+		Columns:
+			Product Name
+			Supplier
+			Price
+			Stocks Left
+			Photo
+			Actions: 
+				Edit
+				Delete(Why?)
+				->Restock (Modal popup of ===Add Request=== but with the selected product on Item Request)
+
+	===Add Product===
+		Is this for Sales and Marketing
+			(To confirm scope with S&M)
+
+Reports -> Order Report
+	IMPORTANT: NEED TO CONFIRM CHECKOUT DETAILS WITH S&M
+	===Table===
+		Columns:
+			Order Date
+			Customer
+			->Customer shipping detail (is this necessary? confirm with S&M)
+			Total Amount
+			Actions:
+				View Full Details
+					Modal Popup details:
+						Customer details
+						Table:
+							Columns: Product Name, Price, Qty, Sub Total
+							Total summing Sub-totals
+
+	IMPORTANT: WE NEED TO "CONFIRM" CHECKOUTS FIRST FROM S&M
+
+Reports -> Inventory Report
+	IMPORTANT: NEED TO CONFIRM CHECKOUT DETAILS WITH S&M
+	===Table===
+		Columns:
+			Date
+			User (if applicable)
+			Action done
+			Product Name
+			Quantity
+	NOTE: THIS AUTOMATICALLY TRACKS CHANGES DONE ON THE INVENTORY SYSTEM
